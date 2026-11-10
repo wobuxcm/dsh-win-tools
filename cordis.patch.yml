@@ -1,0 +1,4 @@
+# dsh-win-tools: one Host row exposing the unified pc_* tool surface.
+- insert:
+    - id: win-tools
+      name: '@wobuxcm/dsh-win-tools'
