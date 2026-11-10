@@ -1,0 +1,59 @@
+{
+  "name": "@wobuxcm/dsh-win-tools",
+  "version": "0.2.3",
+  "description": "Self-contained Windows desktop-control plugin for DeepSeek Harness: accessibility refs, SendInput pixel actions, GDI screenshots, browser DOM, clipboard, notifications, in-process waits and an operator pause switch.",
+  "type": "module",
+  "main": "./index.js",
+  "exports": {
+    ".": "./index.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "lib/",
+    "bin/",
+    "LICENSES/",
+    "THIRD-PARTY-NOTICES.md",
+    "cordis.patch.yml",
+    "README.md",
+    "CHANGELOG.md"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wobuxcm/dsh-win-tools.git"
+  },
+  "homepage": "https://github.com/wobuxcm/dsh-win-tools#readme",
+  "bugs": {
+    "url": "https://github.com/wobuxcm/dsh-win-tools/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "koffi": "^2.10.1",
+    "pngjs": "^7.0.0"
+  },
+  "optionalDependencies": {
+    "playwright-core": "^1.65.0"
+  },
+  "license": "MIT",
+  "author": "cjl15",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "windows",
+    "computer-use",
+    "accessibility",
+    "sendinput",
+    "automation"
+  ],
+  "engines": {
+    "node": ">=20"
+  }
+}
